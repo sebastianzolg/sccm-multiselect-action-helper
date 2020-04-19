@@ -1,0 +1,12 @@
+﻿
+  <ActionDescription Class="Executable" DisplayName="3400aef1-5b53-4e71-a7cb-94eb500a101a" MnemonicDisplayName="Test Action Single" Description = "Test Action Single">
+    <ShowOn>
+      <string>DefaultContextualTab</string>
+      <string>ContextMenu</string>
+    </ShowOn>
+    <Executable>
+      <FilePath>cmd.exe</FilePath>
+      <Parameters>/k echo ##SUB:Name##</Parameters>
+    </Executable>
+  </ActionDescription>
+  

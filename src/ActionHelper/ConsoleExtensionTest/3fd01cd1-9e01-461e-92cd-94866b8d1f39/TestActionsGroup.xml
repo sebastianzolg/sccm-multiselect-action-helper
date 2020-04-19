@@ -1,0 +1,29 @@
+﻿<ActionDescription Class="Group" DisplayName="Test Action Group" MnemonicDisplayName="Test Action Group" Description="Test Action Group" SqmDataPoint="53" SelectionMode="Both">
+  <ShowOn>
+    <string>DefaultHomeTab</string>
+    <string>ContextMenu</string>
+  </ShowOn>
+  <ActionGroups>
+    <ActionDescription Class="Executable" DisplayName="2400aef1-5b53-4e71-a7cb-94eb500a101f" MnemonicDisplayName="Test Action Single" Description="A test item Description">
+      <ShowOn>
+        <string>DefaultHomeTab</string>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+        <FilePath>cmd.exe</FilePath>
+        <Parameters>/k echo ##SUB:Name##</Parameters>
+      </Executable>
+    </ActionDescription>
+    <ActionDescription Class="AssemblyType" DisplayName="2400aef1-5b53-4e71-a7cb-94eb500a101f" MnemonicDisplayName="Test Action Multiselect" Description="Description" SelectionMode="Multiple">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <ActionAssembly>
+        <Assembly>SystemCenter.ConfigurationManager.ActionHelper.dll</Assembly>
+        <Type>SystemCenter.ConfigurationManager.ActionHelper.MultiSelectActionHelper</Type>
+        <Method>ExecuteMultiSelectAction</Method>
+      </ActionAssembly>
+    </ActionDescription>
+  </ActionGroups>
+</ActionDescription>
+

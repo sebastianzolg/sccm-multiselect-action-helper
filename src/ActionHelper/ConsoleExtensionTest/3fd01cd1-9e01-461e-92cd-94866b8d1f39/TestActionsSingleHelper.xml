@@ -1,0 +1,12 @@
+﻿
+  <ActionDescription Class="AssemblyType" DisplayName="3400aef1-5b53-4e71-a7cb-94eb500a101a" MnemonicDisplayName="Test Action Multiselect" Description="Description" SelectionMode="Multiple">
+    <ShowOn>
+      <string>ContextMenu</string>
+    </ShowOn>
+    <ActionAssembly>
+      <Assembly>SystemCenter.ConfigurationManager.ActionHelper.dll</Assembly>
+      <Type>SystemCenter.ConfigurationManager.ActionHelper.MultiSelectActionHelper</Type>
+      <Method>ExecuteMultiSelectAction</Method>
+    </ActionAssembly>
+  </ActionDescription>
+
