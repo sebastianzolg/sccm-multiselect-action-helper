@@ -114,7 +114,7 @@ namespace SystemCenter.ConfigurationManager.ActionHelper
                    if(elItem.Attribute("Class").Value == "Executable")
                    {
 
-                       // safly the the action details and invoke the process
+                       // Store the action details and invoke the process
                        FilePath = (String.IsNullOrEmpty(elItem.Element("Executable").Element("FilePath").Value)) ? string.Empty : elItem.Element("Executable").Element("FilePath").Value;
                        Parameters = (String.IsNullOrEmpty(elItem.Element("Executable").Element("Parameters").Value)) ? string.Empty : elItem.Element("Executable").Element("Parameters").Value;
 
